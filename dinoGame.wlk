@@ -36,6 +36,7 @@ object juego{
 	}
 	
 	method terminar(){
+		game.boardGround("fondo3.png")
 		game.addVisual(gameOver)
 		cactus.detener()
 		reloj.detener()
