@@ -56,14 +56,14 @@ object reloj {
 	method position() = game.at(1, game.height()-1)
 	
 	method pasarTiempo() {
-		//COMPLETAR
+		tiempo = tiempo + 1
 	}
 	method iniciar(){
 		tiempo = 0
 		game.onTick(100,"tiempo",{self.pasarTiempo()})
 	}
 	method detener(){
-		//COMPLETAR
+		//completar
 	}
 }
 
@@ -79,11 +79,14 @@ object cactus {
 	}
 	
 	method mover(){
-		//COMPLETAR
+		position = position.left(1)
+		if (position.x() == -1){
+			position = self.posicionInicial()
+		}
 	}
 	
 	method chocar(){
-		//COMPLETAR
+		
 	}
     method detener(){
 		//COMPLETAR
