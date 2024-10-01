@@ -625,3 +625,19 @@
 {"level":"info","message":"⌛ Building environment","timeElapsed":243,"timestamp":"2024-10-01T04:08:48.918Z"}
 {"level":"info","message":"onRequest - WORKSPACE_URI:file:///home/leon/Work/ALGO1/2024/Workspace/dino2","timestamp":"2024-10-01T04:08:48.974Z"}
 {"level":"info","message":"Removing diagnostics from /home/leon/Work/ALGO1/2024/Workspace/dino2/testExample.wtest","timestamp":"2024-10-01T04:08:49.020Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":325,"timestamp":"2024-10-01T21:25:19.726Z"}
+{"level":"info","message":"onRequest - WORKSPACE_URI:file:///c%3A/Facu/Materia/Algo1/Git/dino2-zaraza","timestamp":"2024-10-01T21:25:19.740Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":255,"timestamp":"2024-10-01T21:25:19.998Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":338,"timestamp":"2024-10-01T21:25:20.348Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":142,"timestamp":"2024-10-01T21:25:20.494Z"}
+{"level":"info","message":"⌛ Validating dino.wtest","timeElapsed":448,"timestamp":"2024-10-01T21:25:20.946Z"}
+{"level":"info","message":"⌛ Validating dinoGame.wlk","timeElapsed":297,"timestamp":"2024-10-01T21:25:21.245Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":206,"timestamp":"2024-10-01T21:25:21.452Z"}
+{"level":"info","message":"⌛ Validating mainExample.wpgm","timeElapsed":233,"timestamp":"2024-10-01T21:25:21.701Z"}
+{"level":"info","message":"⌛ Validating dino.wtest","timeElapsed":220,"timestamp":"2024-10-01T21:25:22.006Z"}
+{"level":"info","message":"⌛ Validating dinoGame.wlk","timeElapsed":176,"timestamp":"2024-10-01T21:25:22.183Z"}
+{"level":"info","message":"⌛ Validating mainExample.wpgm","timeElapsed":162,"timestamp":"2024-10-01T21:25:22.346Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":393,"timestamp":"2024-10-01T21:30:28.158Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":232,"timestamp":"2024-10-01T21:30:28.395Z"}
+{"level":"info","message":"⌛ Validating algo.wlk","timeElapsed":383,"timestamp":"2024-10-01T21:30:28.895Z"}
+{"level":"info","message":"⌛ Validating algo.wlk","timeElapsed":169,"timestamp":"2024-10-01T21:30:29.067Z"}
