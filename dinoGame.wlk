@@ -7,7 +7,7 @@ object juego{
 	method configurar(){
 		game.width(12)
 		game.height(8)
-		game.title("Dino Game")
+		game.title("Dino Gaay")
 		game.boardGround("fondo.png")
 		game.addVisual(suelo)
 		game.addVisual(cactus)
@@ -46,7 +46,7 @@ object juego{
 
 object gameOver {
 	method position() = game.center()
-	method text() = "GAME OVER"
+	method text() = "NINJA DINO DALTO MURIO"
 }
 
 object reloj {
@@ -123,7 +123,7 @@ object dino {
 		position = position.down(1)
 	}
 	method morir(){
-		game.say(self,"¡Auch!")
+		game.say(self,"¡Auch mi colaa!")
 		vivo = false
 	}
 	method iniciar() {
