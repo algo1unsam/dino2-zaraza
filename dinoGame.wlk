@@ -105,9 +105,14 @@ object dino {
 	var property position = game.at(1,suelo.position().y())
 	
 	method image() = "dino.png"
-	
 	method saltar(){
-		//COMPLETAR
+		position = position.up(0.5)
+		game.schedule(100, {position = position.up(0.5)})
+		game.schedule(200, {position = position.up(0.5)})
+		game.schedule(450, {position = position.down(0.5)})
+		game.schedule(500, {position = position.down(0.5)})
+		game.schedule(600, {position = position.down(0.5)})
+
 	}
 	
 	method subir(){
