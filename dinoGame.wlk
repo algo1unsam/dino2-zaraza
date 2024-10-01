@@ -16,7 +16,7 @@ object juego{
 	
 		keyboard.space().onPressDo{ self.jugar()}
 		game.onCollideDo(dino,{ obstaculo => obstaculo.chocar()})
-		//gonza se la come
+		//gonza se la comeeeee
 
 		
 	} 
