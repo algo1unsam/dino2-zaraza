@@ -7,7 +7,7 @@ object juego{
 	method configurar(){
 		game.width(12)
 		game.height(8)
-		game.title("Dino Game")
+		game.title("Dino Gaay")
 		game.boardGround("fondo.png")
 		game.addVisual(suelo)
 		game.addVisual(cactus)
@@ -16,8 +16,10 @@ object juego{
 	
 		keyboard.space().onPressDo{ self.jugar()}
 		game.onCollideDo(dino,{ obstaculo => obstaculo.chocar()})
+
 		
 	} 
+
 	
 	method iniciar(){
 		dino.iniciar()
@@ -36,6 +38,7 @@ object juego{
 	}
 	
 	method terminar(){
+		game.boardGround("fondo3.png")
 		game.addVisual(gameOver)
 		cactus.detener()
 		reloj.detener()
@@ -46,7 +49,7 @@ object juego{
 
 object gameOver {
 	method position() = game.center()
-	method text() = "GAME OVER"
+	method text() = "NINJA DINO DALTO MURIO"
 }
 
 object reloj {
@@ -56,14 +59,14 @@ object reloj {
 	method position() = game.at(1, game.height()-1)
 	
 	method pasarTiempo() {
-		//COMPLETAR
+		tiempo = tiempo + 1
 	}
 	method iniciar(){
 		tiempo = 0
 		game.onTick(100,"tiempo",{self.pasarTiempo()})
 	}
 	method detener(){
-		//COMPLETAR
+		//completar
 	}
 }
 
@@ -79,14 +82,21 @@ object cactus {
 	}
 	
 	method mover(){
-		//COMPLETAR
+		position = position.left(1)
+		if (position.x() == -1){
+			position = self.posicionInicial()
+		}
 	}
-	
+
 	method chocar(){
-		//COMPLETAR
+		if(self.position() == dino.position()){
+			juego.terminar()
+		}
+
 	}
+
     method detener(){
-		//COMPLETAR
+		game.schedule(0000, { game.stop() })
 	}
 }
 
@@ -102,9 +112,21 @@ object dino {
 	var property position = game.at(1,suelo.position().y())
 	
 	method image() = "dino.png"
-	
 	method saltar(){
-		//COMPLETAR
+		position = position.up(0.5)
+		game.schedule(100, {position = position.up(0.5)})
+		game.schedule(200, {position = position.up(0.5)})
+		game.schedule(450, {position = position.down(0.5)})
+		game.schedule(500, {position = position.down(0.5)})
+		game.schedule(600, {position = position.down(0.5)})
+
+		position = position.up(0.5)
+		game.schedule(100, {position = position.up(0.5)})
+		game.schedule(200, {position = position.up(0.5)})
+		game.schedule(450, {position = position.down(0.5)})
+		game.schedule(500, {position = position.down(0.5)})
+		game.schedule(600, {position = position.down(0.5)})
+		
 	}
 	
 	method subir(){
@@ -115,7 +137,7 @@ object dino {
 		position = position.down(1)
 	}
 	method morir(){
-		game.say(self,"¡Auch!")
+		game.say(self,"¡Auch mi colaa!")
 		vivo = false
 	}
 	method iniciar() {
